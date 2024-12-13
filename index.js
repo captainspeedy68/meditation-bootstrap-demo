@@ -47,3 +47,5 @@ meditationTrackerForm.addEventListener("submit", function (e) {
     progressModal.show();
   }
 });
+
+
