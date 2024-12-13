@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="lotus-flower.png" type="image/x-icon" />
+    <title>Meditation for Life</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- navbar section is here -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Meditations</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active link-secondary link-underline link-underline-opacity-50 link-underline-opacity-100-hover" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active link-secondary link-underline link-underline-opacity-50 link-underline-opacity-100-hover" href="#">About</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Carts</a></li>
+                <li><a class="dropdown-item" href="#">Images</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Contact us</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- carousal is here -->
+    <div
+      id="carouselExampleFade"
+      class="w-50 mx-auto carousel slide carousel-fade"
+    >
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img src="pink.jpg" class="d-block w-100" alt="King Image" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>
+              "Yoga is the journey of the self, through the self, to the self."
+              - Bhagavad Gita
+            </h5>
+            <p>Meditation fosters inner peace and harmony with one's soul.</p>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img src="light.jpg" class="d-block w-100" alt="Apollo Image" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>
+              "Yoga is the cessation of the fluctuations of the mind." - Yoga
+              Sutra
+            </h5>
+            <p>Find clarity and stillness of mind through meditation.</p>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img
+            src="moumachi.jpg"
+            class="d-block w-100"
+            alt="Golden Sea Image"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>
+              "Peace comes from within. Do not seek it without." - Dhammapada
+            </h5>
+            <p>Unlock the power of self-reflection.</p>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+    <!-- cards are here -->
+    <div class="container mt-5">
+      <h1 class="text-center mb-4">Benefits of Meditation</h1>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="meditation1.jpeg" class="card-img-top" alt="Relaxation" />
+            <div class="card-body">
+              <h5 class="card-title">Relaxation</h5>
+              <p class="card-text">
+                Meditation helps in reducing stress and promoting mental peace.
+              </p>
+
+              <!-- modal -->
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                Learn More Modal
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="staticBackdrop"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                        Modal title
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Veniam dolores mollitia quisquam repellat ex explicabo
+                      earum aperiam doloremque obcaecati eos nostrum cum
+                      possimus, quidem aut laborum illum eum. Dolor consequatur
+                      laudantium distinctio!
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Understood
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="meditationno5.avif"
+              class="card-img-top h-50 w-auto"
+              alt="Focus"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Improved Focus</h5>
+              <p class="card-text">
+                Regular meditation enhances concentration and clarity.
+              </p>
+              <!-- modal -->
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                Learn More Modal
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="staticBackdrop"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                        Modal title
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Veniam dolores mollitia quisquam repellat ex explicabo
+                      earum aperiam doloremque obcaecati eos nostrum cum
+                      possimus, quidem aut laborum illum eum. Dolor consequatur
+                      laudantium distinctio!
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Understood
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="meditation3.jpg"
+              class="card-img-top"
+              alt="Emotional Health"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Emotional Well-being</h5>
+              <p class="card-text">
+                Meditation fosters a positive outlook and reduces anxiety.
+              </p>
+              <!-- modal -->
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                Learn More Modal
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="staticBackdrop"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                        Modal title
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Veniam dolores mollitia quisquam repellat ex explicabo
+                      earum aperiam doloremque obcaecati eos nostrum cum
+                      possimus, quidem aut laborum illum eum. Dolor consequatur
+                      laudantium distinctio!
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Understood
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- table section-->
+    <div class="accordion my-4 border-info" id="scheduleAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="false"
+            aria-controls="collapseOne"
+          >
+            Weekly Meditation Schedule
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingOne"
+          data-bs-parent="#scheduleAccordion"
+        >
+          <div class="accordion-body">
+            <!-- Table -->
+            <table class="table table-bordered table-hover my-4">
+              <thead class="table-primary">
+                <tr>
+                  <th scope="col">Day</th>
+                  <th scope="col">Activity</th>
+                  <th scope="col">Duration</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Monday</th>
+                  <td>Guided Meditation</td>
+                  <td>20 mins</td>
+                </tr>
+                <tr>
+                  <th scope="row">Tuesday</th>
+                  <td>Breathwork</td>
+                  <td>15 mins</td>
+                </tr>
+                <tr>
+                  <th scope="row">Wednesday</th>
+                  <td>Upasana Meditation</td>
+                  <td>30 mins</td>
+                </tr>
+                <tr>
+                  <th scope="row">Thursday</th>
+                  <td>Vipassana Meditation</td>
+                  <td>30 mins</td>
+                </tr>
+                <tr>
+                  <th scope="row">Friday</th>
+                  <td>Pranayama</td>
+                  <td>30 mins</td>
+                </tr>
+                <tr>
+                  <th scope="row">Saturday</th>
+                  <td>Mindful Walking</td>
+                  <td>20 mins</td>
+                </tr>
+                <tr>
+                  <th scope="row">Sunday</th>
+                  <td>Self-Reflection</td>
+                  <td>25 mins</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- meditation progress is here -->
+    <div class="container mt-5 bg-light rounded shadow p-4">
+      <h1 class="text-center mb-4">Meditation Progress Tracker</h1>
+
+      <!-- Form for Tracking Progress -->
+      <form id="meditationTrackerForm">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="meditationType" class="form-label"
+                >Type of Meditation</label
+              >
+              <select class="form-select" id="meditationType" required>
+                <option value="" disabled selected>
+                  Select Meditation Type
+                </option>
+                <option value="Guided Meditation">Guided Meditation</option>
+                <option value="Vipassana Meditation">
+                  Vipassana Meditation
+                </option>
+                <option value="Pranayama">Pranayama</option>
+                <option value="Mindful Walking">Mindful Walking</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="duration" class="form-label"
+                >Duration (minutes)</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="duration"
+                min="1"
+                max="180"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="date" class="form-label">Date of Meditation</label>
+          <input type="date" class="form-control" id="date" required />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Log Progress</button>
+      </form>
+
+      <!-- Meditation Progress Bar -->
+      <div class="my-4">
+        <h5>Overall Progress</h5>
+        <progress id="progressBar" value="0" max="100" class="w-100"></progress>
+        <p id="progressText">
+          You have completed <span id="completedProgress">0</span>% of your
+          goal.
+        </p>
+      </div>
+
+      <!-- Modal for Completion Alert -->
+      <div
+        class="modal fade"
+        id="progressModal"
+        tabindex="-1"
+        aria-labelledby="progressModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="progressModalLabel">
+                Meditation Goal Progress
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              Congratulations! You have reached your meditation goal for today.
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- popover and toast -->
+    <div class="card my-4 container">
+      <div class="card-header text-center">
+        <h5>Discover Meditation Tips</h5>
+      </div>
+      <div class="card-body">
+        <!-- Toast Button -->
+        <div class="d-flex justify-content-center mb-3">
+          <button type="button" class="btn btn-primary" id="liveToastBtn">
+            Show Meditation Toast
+          </button>
+        </div>
+
+        <!-- Popover Button -->
+        <div class="d-flex justify-content-center">
+          <button
+            type="button"
+            class="btn btn-lg btn-primary d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2"
+            style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), 0.25)"
+            id="meditationTipButton"
+            data-bs-toggle="popover"
+            data-bs-title="Meditation Tip"
+            data-bs-content="Take a deep breath and focus on your inner peace. Allow your thoughts to settle like calm waters."
+          >
+            Click to Discover Meditation Tip
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="liveToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <img src="aum.jpeg" class="rounded me-2 w-25" alt="..." />
+          <strong class="me-auto">Aum</strong>
+          <small>11 mins ago</small>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">Aum Namo Narayanaya</div>
+      </div>
+    </div>
+
+    <!-- grid layout section-->
+    <div class="container border mt-5 p-4 bg-light rounded shadow">
+      <h1 class="text-center mb-4 text-primary">Meditation and Mindfulness</h1>
+      <div class="row border rounded p-3 mb-4">
+        <div class="col border-end text-center">
+          <h2 class="text-success">Breathing Techniques</h2>
+          <p>
+            Learn the art of mindful breathing to calm your mind and improve
+            focus.
+          </p>
+          <button class="btn btn-outline-success">Learn More</button>
+        </div>
+        <div class="col text-center">
+          <h2 class="text-info">Mindfulness Practice</h2>
+          <p>
+            Engage in techniques to enhance presence and awareness in everyday
+            life.
+          </p>
+          <button class="btn btn-outline-info">Explore</button>
+        </div>
+      </div>
+      <div class="row border rounded p-3">
+        <div class="col border-end text-center">
+          <h2 class="text-warning">Yoga for Relaxation</h2>
+          <p>
+            Discover yoga poses and stretches to release tension and find peace.
+          </p>
+          <button class="btn btn-outline-warning">Try Yoga</button>
+        </div>
+        <div class="col border-end text-center">
+          <h2 class="text-primary">Guided Meditations</h2>
+          <p>
+            Listen to expert-guided sessions for stress relief and
+            self-discovery.
+          </p>
+          <button class="btn btn-outline-primary">Listen Now</button>
+        </div>
+        <div class="col text-center">
+          <h2 class="text-danger">Meditation Resources</h2>
+          <p>Access a library of articles, books, and videos on meditation.</p>
+          <button class="btn btn-outline-danger">Browse</button>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- email input and message section-->
+    <div class="w-50 mx-auto">
+      <form class="my-4">
+        <h3 class="text-center text-primary mb-4">We Value Your Thoughts</h3>
+        <div class="mb-3">
+          <label for="emailInput" class="form-label text-primary-emphasis"
+            >Your Email Address</label
+          >
+          <input
+            type="email"
+            class="form-control border-primary-subtle shadow-sm"
+            id="emailInput"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="messageInput" class="form-label text-primary-emphasis"
+            >Your Message</label
+          >
+          <textarea
+            class="form-control border-primary-subtle shadow-sm"
+            id="messageInput"
+            rows="4"
+            placeholder="Share your thoughts or experiences with us..."
+            required
+          ></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-success shadow-sm px-4">
+            Send Feedback
+          </button>
+        </div>
+      </form>
+    </div>
+    <!--  -->
+
+    <!-- accordions section-->
+    <div class="accordion my-4" id="faqAccordion">
+      <!-- First Accordion Item -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            What is meditation?
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingOne"
+          data-bs-parent="#faqAccordion"
+        >
+          <div class="accordion-body">
+            Meditation is a practice to achieve mental clarity and emotional calmness.
+          </div>
+        </div>
+      </div>
+    
+      <!-- Second Accordion Item -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            How often should I meditate?
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingTwo"
+          data-bs-parent="#faqAccordion"
+        >
+          <div class="accordion-body">
+            Ideally, 10–20 minutes daily is a good starting point.
+          </div>
+        </div>
+      </div>
+    
+      <!-- Third Accordion Item: Meditation Tips (Stack Inside Accordion) -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            Meditation Tips
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingThree"
+          data-bs-parent="#faqAccordion"
+        >
+          <div class="accordion-body">
+            <div class="hstack gap-3 bg-primary bg-opacity-50 p-3 rounded">
+              <!-- First Item: Meditation type -->
+              <div class="p-2 text-white opacity-75">Guided Meditation</div>
+              
+              <!-- Second Item: Time or duration -->
+              <div class="p-2 ms-auto text-white opacity-75">20 mins</div>
+              
+              <!-- Vertical Divider -->
+              <div class="vr text-white opacity-75"></div>
+              
+              <!-- Third Item: Meditation focus -->
+              <div class="p-2 text-white opacity-75">Focus on Breath</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+    <!-- footer -->
+    <div class="card text-center border-0 bg-light shadow-sm">
+      <div class="card-header bg-transparent border-0 text-success fw-bold">
+        Stay Mindful
+      </div>
+      <div class="card-body">
+        <h5 class="card-title text-primary">Find Your Inner Peace</h5>
+        <p class="card-text">
+          Explore guided meditations and tips to help you stay balanced and
+          centered in daily life.
+        </p>
+        <a href="#" class="btn btn-success">Discover More</a>
+      </div>
+      <div class="card-footer bg-transparent text-muted">
+        Updated 2 days ago | © 2024 Tranquility Hub
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
