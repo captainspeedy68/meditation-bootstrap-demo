@@ -383,7 +383,7 @@
             aria-expanded="false"
             aria-controls="collapseOne"
           >
-            Weekly Meditation Schedule
+            Click to see Weekly Meditation Schedule
           </button>
         </h2>
         <div
@@ -444,6 +444,73 @@
         </div>
       </div>
     </div>
+
+    <!-- Scroll Spy -->
+    <div class="row w-75 mx-auto my-4 shadow-lg rounded bg-light">
+      <!-- List Group -->
+      <div class="col-md-4 py-3 bg-primary text-light rounded-start">
+        <h5 class="text-center mb-3">Meditation Techniques</h5>
+        <div id="list-example" class="list-group">
+          <a class="list-group-item list-group-item-action bg-primary text-light border-0 fw-bold hover-shadow" href="#list-item-1">
+            Upasana
+          </a>
+          <a class="list-group-item list-group-item-action bg-primary text-light border-0 fw-bold hover-shadow" href="#list-item-2">
+            Vipassana
+          </a>
+          <a class="list-group-item list-group-item-action bg-primary text-light border-0 fw-bold hover-shadow" href="#list-item-3">
+            Mindfulness
+          </a>
+          <a class="list-group-item list-group-item-action bg-primary text-light border-0 fw-bold hover-shadow" href="#list-item-4">
+            Transcendental
+          </a>
+          <a class="list-group-item list-group-item-action bg-primary text-light border-0 fw-bold hover-shadow" href="#list-item-5">
+            Loving-Kindness
+          </a>
+          <a class="list-group-item list-group-item-action bg-primary text-light border-0 fw-bold hover-shadow" href="#list-item-6">
+            Zen Meditation
+          </a>
+        </div>
+      </div>
+    
+      <!-- Scrollable Content -->
+      <div class="col-md-8 py-3">
+        <div
+          data-bs-spy="scroll"
+          data-bs-target="#list-example"
+          data-bs-smooth-scroll="true"
+          class="scrollspy-example overflow-auto"
+          style="height: 300px; padding: 15px; border: 1px solid #ccc; border-radius: 5px;"
+          tabindex="0"
+        >
+          <h4 id="list-item-1" class="text-primary">Upasana Meditation</h4>
+          <p>
+            A devotional form of meditation practiced in traditions like Sri Vaishnavism. Focus on connecting with the divine through rituals, chanting, and visualization of the Lord’s attributes.
+          </p>
+          <h4 id="list-item-2" class="text-primary">Vipassana Meditation</h4>
+          <p>
+            A practice of self-transformation through self-observation. Focus on deep insight into the true nature of reality, using mindfulness of breath and bodily sensations.
+          </p>
+          <h4 id="list-item-3" class="text-primary">Mindfulness Meditation</h4>
+          <p>
+            Focus on your breath and the present moment. Observe your thoughts without judgment and let them pass like clouds in the sky.
+          </p>
+          <h4 id="list-item-4" class="text-primary">Transcendental Meditation</h4>
+          <p>
+            Use a mantra to transcend distractions and reach a state of deep relaxation and inner calm.
+          </p>
+          <h4 id="list-item-5" class="text-primary">Loving-Kindness Meditation</h4>
+          <p>
+            Cultivate an attitude of compassion and love by repeating phrases like "May I be happy, may you be safe."
+          </p>
+          <h4 id="list-item-6" class="text-primary">Zen Meditation</h4>
+          <p>
+            Practice seated meditation (zazen) with a focus on posture, breathing, and mindfulness, often in silence.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+
 
     <!-- meditation progress is here -->
     <div class="container mt-5 bg-light rounded shadow p-4">
@@ -597,6 +664,10 @@
         <div class="toast-body">Aum Namo Narayanaya</div>
       </div>
     </div>
+
+
+
+    
 
     <!-- grid layout section-->
     <div class="container border mt-5 p-4 bg-light rounded shadow">
