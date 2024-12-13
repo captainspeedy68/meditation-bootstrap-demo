@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="timer" class="text-center">
+        <h3>Start Your Meditation Timer</h3>
+        <button id="startTimer" class="btn btn-success">Start 10-Min Timer</button>
+        <div id="timerDisplay">10:00</div>
+      </div>
+      <script>
+        // Get the elements
+        const startButton = document.getElementById("startTimer");
+        const timerDisplay = document.getElementById("timerDisplay");
+      
+        // Initial time (10 minutes)
+        let timeRemaining = 10 * 60; // in seconds
+      
+        let timerInterval;
+      
+        // Function to start the timer
+        function startTimer() {
+          // Disable the button once it's clicked
+          startButton.disabled = true;
+      
+          // Update the timer display every second
+          timerInterval = setInterval(function () {
+            // Calculate minutes and seconds
+            let minutes = Math.floor(timeRemaining / 60);
+            let seconds = timeRemaining % 60;
+      
+            // Format time as MM:SS
+            timerDisplay.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+      
+            // Decrement the remaining time
+            timeRemaining--;
+      
+            // If time runs out, stop the timer
+            if (timeRemaining < 0) {
+              clearInterval(timerInterval);
+              timerDisplay.textContent = "00:00";
+              startButton.disabled = false; // Re-enable the button
+              alert("Time's up! Meditation session complete.");
+            }
+          }, 1000); // Update every 1 second
+        }
+      
+        // Add event listener to the start button
+        startButton.addEventListener("click", startTimer);
+      </script>
+      
+</body>
+</html>
